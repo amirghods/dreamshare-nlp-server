@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 # لود کردن مدل چندزبانه
-model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 @app.post("/embed")
 async def get_embedding(text: dict):
